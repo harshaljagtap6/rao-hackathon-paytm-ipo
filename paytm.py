@@ -17,10 +17,7 @@ count = 1
 while(count < 101):
     final_list = []
     list1 = convertor(new_lines[count]).copy()
-    print(list1)
     a = list1.index(max(list1))
-    print("MAX ->", max(list1))
-    print("MIN ->", min(list1))
     final_list.append(max(list1) - min(list1))
     minute = float(9.30)
     init_time = 0.0
@@ -38,7 +35,3 @@ while(count < 101):
     out_file.writelines("\n")
 out_file.close()
 my_file.close()
-
-
-print("-"*100)
-print(float("{0:.2f}".format(minute)))
